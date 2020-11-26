@@ -154,8 +154,8 @@ public fun isAllowed(incomingIp: String): Boolean{
 fun main(args: Array<String>) {
 //    print(isAllowed("192.40.30.3"))
 //    print(isAllowed("191.3.4.0"))
-    val arrayOfCidrIp = arrayOf("192.3.4.92/31", "192.3.76.92/24", "192.3.32.92/24", "35.3.32.92/8")
+    val cidrIpsArray = arrayOf("192.3.4.92/31", "192.3.76.92/24", "192.3.32.92/24", "35.3.32.92/8")
     val incomingIpsArray = arrayOf("192.40.30.3", "191.40.30.3", "35.6.222.121", "192.3.87.92")
-    genericIsAllowed(incomingIpsArray, arrayOfCidrIp)
+    genericIsAllowed(incomingIpsArray, cidrIpsArray)
 }
 
